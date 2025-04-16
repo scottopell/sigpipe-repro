@@ -14,4 +14,4 @@ path = "src/bin/server.rs"
 
 [dependencies]
 libc = "0.2"
-observability = { path = "/Users/scott.opell/dd/dd-source/libs/rust/observability" }
+observability = { path = "/home/ubuntu/dd/dd-source/libs/rust/observability" }
