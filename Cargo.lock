@@ -1280,6 +1280,7 @@ dependencies = [
  "env_logger",
  "futures",
  "hdrhistogram",
+ "libc",
  "load_reporter",
  "log",
  "metrics",
@@ -1986,11 +1987,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "sigpipe"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5584bfb3e0d348139d8210285e39f6d2f8a1902ac06de343e06357d1d763d8e6"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "sigpipe-repro"
 version = "0.1.0"
 dependencies = [
  "libc",
  "observability",
+ "sigpipe",
 ]
 
 [[package]]

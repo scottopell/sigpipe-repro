@@ -7,6 +7,7 @@ use std::time::Duration;
 const SOCKET_PATH: &str = "/tmp/socket-demo";
 
 fn main() {
+    sigpipe::reset();
     // Parse frequency from command line or use default 1Hz
     let args: Vec<String> = env::args().collect();
     let frequency = if args.len() > 1 {

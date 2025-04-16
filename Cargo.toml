@@ -15,3 +15,4 @@ path = "src/bin/server.rs"
 [dependencies]
 libc = "0.2"
 observability = { path = "/home/ubuntu/dd/dd-source/libs/rust/observability" }
+sigpipe = "0.1.3"
